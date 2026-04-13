@@ -16,9 +16,10 @@ These repos are not independent tools. They are layers of a single control-syste
 | Layer | Repo | Role |
 |-------|------|------|
 | **Supervision** | [react-native-opencode-client](https://github.com/cloudpresser/react-native-opencode-client) | Operator surface — observe, intervene, approve agent execution in real time. 37+ PRs in 2 weeks. |
+| **Observability** | *planned* | End-to-end execution tracing, replay, and system introspection (OpenTelemetry) |
 | **Verification** | [opencode-devtools](https://github.com/cloudpresser/opencode-devtools) | Control-loop gates — type checks, tests, build status as execution constraints |
 | **Execution** | [OpenCode](https://github.com/anomalyco/opencode) | Agent runtime (contributor — RLM REPL sandbox fix, Learn plugin) |
-| **Learned Policy** | [opencode-learn](https://github.com/cloudpresser/opencode-learn) | Feedback-driven adaptive controller — agents learn operational hints, not ground truth |
+| **Learned Policy** | [opencode-learn](https://github.com/cloudpresser/opencode-learn) | Feedback-driven adaptive controller — agents learn adaptive control hints, not ground truth |
 | **Epistemic Safety** | [agent-memory-failure-demo](https://github.com/cloudpresser/agent-memory-failure-demo) | Controlled experiment proving lossy memory degrades agent correctness |
 | **Thesis** | [cloudpresser.com](https://cloudpresser.com) | Architecture essays: "Control Systems for Intelligent Software" series |
 
@@ -33,6 +34,8 @@ Human Intent ──> Orchestration ──> Agent Execution ──> Verification 
 ```
 
 The same architecture that governs robotics and industrial automation (I'm an [ArduPilot/MAVLink](https://github.com/ArduPilot/ardupilot) contributor) applies to AI agent systems: machine telemetry, operator interfaces, and human-in-the-loop control.
+
+Verification is bounded. Execution is open-ended. Supervision is where reliability emerges.
 
 ### This Architecture Is Domain-General
 
