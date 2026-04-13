@@ -1,6 +1,6 @@
 # Hi, I'm Luiz Ozorio
 
-Engineering leader building control systems for intelligent software — orchestration pipelines where humans supervise AI agents executing complex tasks.
+Building control-system primitives for supervised AI execution. Software development is the first proving ground — the architecture generalizes to any domain where humans supervise agents in high-consequence workflows.
 
 ## What I Do
 
@@ -9,14 +9,18 @@ Engineering leader building control systems for intelligent software — orchest
 - **Engineering Leadership** — Defined architecture, standards, and mentoring practices for a 25-engineer organization; drove ~300% release cadence improvement through platform infrastructure and engineering culture
 - **Open Source** — React Native core contributor, ArduPilot autonomous systems contributor, OpenCode ecosystem (mobile client, RLM REPL fix [experimental PR], Learn plugin)
 
-## Featured Projects
+## The Stack
 
-| Project | Description | Stack |
-|---------|-------------|-------|
-| [**React Native OpenCode Client**](https://github.com/cloudpresser/react-native-opencode-client) | Mobile supervision interface for AI coding agent platform — real-time streaming, terminal emulation, git viewer, interactive agent control. 37+ PRs in 2 weeks. | React Native, TypeScript |
-| [**OpenCode Learn**](https://github.com/cloudpresser/opencode-learn) | Plugin enabling AI agents to capture and persist knowledge as reusable skill files | TypeScript |
-| [**LLM Tools**](https://github.com/cloudpresser/llm-tools) | AI-powered CLI that generates PR descriptions from git diffs, reducing code review time ~80% | TypeScript, OpenAI, Azure DevOps |
-| [**Wildlife Detection API**](https://github.com/cloudpresser/wildlifeApp) | REST API for automated species identification using Microsoft MegaDetector v5a (YOLOv5/PyTorch) | Python, Flask, PyTorch |
+These repos are not independent tools. They are layers of a single control-system architecture.
+
+| Layer | Repo | Role |
+|-------|------|------|
+| **Supervision** | [react-native-opencode-client](https://github.com/cloudpresser/react-native-opencode-client) | Operator surface — observe, intervene, approve agent execution in real time. 37+ PRs in 2 weeks. |
+| **Verification** | [opencode-devtools](https://github.com/cloudpresser/opencode-devtools) | Control-loop gates — type checks, tests, build status as execution constraints |
+| **Execution** | [OpenCode](https://github.com/anomalyco/opencode) | Agent runtime (contributor — RLM REPL sandbox fix, Learn plugin) |
+| **Learned Policy** | [opencode-learn](https://github.com/cloudpresser/opencode-learn) | Feedback-driven adaptive controller — agents learn operational hints, not ground truth |
+| **Epistemic Safety** | [agent-memory-failure-demo](https://github.com/cloudpresser/agent-memory-failure-demo) | Controlled experiment proving lossy memory degrades agent correctness |
+| **Thesis** | [cloudpresser.com](https://cloudpresser.com) | Architecture essays: "Control Systems for Intelligent Software" series |
 
 ## How I Think About Systems
 
@@ -29,6 +33,21 @@ Human Intent ──> Orchestration ──> Agent Execution ──> Verification 
 ```
 
 The same architecture that governs robotics and industrial automation (I'm an [ArduPilot/MAVLink](https://github.com/ArduPilot/ardupilot) contributor) applies to AI agent systems: machine telemetry, operator interfaces, and human-in-the-loop control.
+
+### This Architecture Is Domain-General
+
+Software development is the current implementation context — it's observable, replayable, rich in intermediate artifacts, and a strong sandbox for control-loop design. But the primitives generalize:
+
+| Domain | Agent executes... | Human supervises... |
+|--------|-------------------|---------------------|
+| Software | code edits, test runs | merge decisions, architecture |
+| Research | evidence gathering, synthesis | source evaluation, conclusions |
+| Operations | workflow execution | exception handling, escalation |
+| Analytics | data traversal, pattern detection | decision validation |
+
+The architecture is always: **intent → orchestration → execution → verification → supervision.**
+
+The anchoring constraint across every domain: **never destroy raw evidence. Summarize for navigation, not for storage.**
 
 ## Tech
 
@@ -47,9 +66,10 @@ The same architecture that governs robotics and industrial automation (I'm an [A
 
 ## Writing
 
-I write about AI agent architecture, control systems, and the engineering problems behind reliable AI-assisted development.
+Series: **Control Systems for Intelligent Software** — mapping robotics and industrial automation architecture onto AI agent systems.
 
-- [**Bash Is All You Need — Until It Isn't**](https://cloudpresser.com/writing/bash-is-all-you-need) — Why execution is a solved problem, but context curation, task orchestration, verification, and human supervision are the real engineering challenges. Part 1 of "Control Systems for Intelligent Software."
+- [**Bash Is All You Need — Until It Isn't**](https://cloudpresser.com/writing/bash-is-all-you-need) — Execution is solved. Context curation, orchestration, verification, and supervision are the real problems.
+- [**AI Agents Are Control Systems**](https://cloudpresser.com/writing/ai-agents-are-control-systems) — The ArduPilot/MAVLink architecture is a proven blueprint for AI agent supervision.
 
 ## Connect
 
