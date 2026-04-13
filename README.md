@@ -21,7 +21,7 @@ These repos are not independent tools. They are layers of a single control-syste
 | **Execution** | [OpenCode](https://github.com/anomalyco/opencode) | Agent runtime (contributor — RLM REPL sandbox fix, Learn plugin) |
 | **Learned Policy** | [opencode-learn](https://github.com/cloudpresser/opencode-learn) | Feedback-driven adaptive controller — agents learn adaptive control hints, not ground truth |
 | **Epistemic Safety** | [agent-memory-failure-demo](https://github.com/cloudpresser/agent-memory-failure-demo) | Controlled experiment proving lossy memory degrades agent correctness |
-| **Thesis** | [cloudpresser.com](https://cloudpresser.com) | Architecture essays: "Control Systems for Intelligent Software" series |
+| **Thesis** | [Control Systems for Intelligent Software](https://cloudpresser.com/control-systems-for-ai) | Architecture essay series — execution, verification, observability, control surfaces, supervision |
 
 ## How I Think About Systems
 
@@ -72,6 +72,7 @@ The anchoring constraint across every domain: **never destroy raw evidence. Summ
 Series: **Control Systems for Intelligent Software** — mapping robotics and industrial automation architecture onto AI agent systems.
 
 - [**Bash Is All You Need — Until It Isn't**](https://cloudpresser.com/writing/bash-is-all-you-need) — Execution is solved. Context curation, orchestration, verification, and supervision are the real problems.
+- [**Why the Smart Model Reviewer Pattern Is Backwards**](https://cloudpresser.com/writing/smart-model-reviewer-is-backwards) — Strong models should generate. Cheap models should verify. The industry has it backwards.
 - [**AI Agents Are Control Systems**](https://cloudpresser.com/writing/ai-agents-are-control-systems) — The ArduPilot/MAVLink architecture is a proven blueprint for AI agent supervision.
 
 ## Connect
