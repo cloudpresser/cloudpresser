@@ -15,8 +15,7 @@ These repos are not independent tools. They are layers of a single control-syste
 
 | Layer | Repo | Role |
 |-------|------|------|
-| **Control Surface** | [control-surface-agent](https://github.com/cloudpresser/control-surface-agent) | Thesis artifact for production reliability: explicit intent, plan, telemetry, reconciliation, operator intervention, and decision artifact in one supervised run. |
-| **Supervision** | [react-native-opencode-client](https://github.com/cloudpresser/react-native-opencode-client) | Operator surface for software agents — observe, intervene, approve execution in real time. 37+ PRs in 2 weeks. |
+| **Supervision** | [control-surface-agent](https://github.com/cloudpresser/control-surface-agent) | Production reliability control surface: explicit intent, plan, telemetry, reconciliation, operator intervention, and decision artifact in one supervised run. |
 | **Observability** | *emerging* | End-to-end execution tracing, replay, and longitudinal system introspection (OpenTelemetry) |
 | **Verification** | [opencode-devtools](https://github.com/cloudpresser/opencode-devtools) | Control-loop gates — type checks, tests, build status as execution constraints |
 | **Execution** | [OpenCode](https://github.com/anomalyco/opencode) | Agent runtime (contributor — RLM REPL sandbox fix, Learn plugin) |
